@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серіктестер – GBWC</title>
+    <link rel="icon" href="/img/own/logo.svg">
+    <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/hero-media.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+</head>
+<body>
+    <div class="preloader_container" id="main-preloader">
+        <div class="preloader">
+            <div class="preloader_letters">
+                <div class="g">G</div><div class="w">W</div>
+                <div class="b">B</div><div class="c">C</div>
+            </div>
+            <img class="circle" src="/img/loading-clock.svg" alt="loading">
+            <img class="logo" src="/img/own/logo.svg" alt="logo">
+        </div>
+    </div>
+    <div class="aurora-bg">
+        <div class="aurora-orb aurora-orb-1"></div>
+        <div class="aurora-orb aurora-orb-2"></div>
+        <div class="aurora-orb aurora-orb-3"></div>
+    </div>
+    <nav class="logo-nav" id="logo-nav">
+        <a href="/kk/kk.html" class="logo-circle" aria-label="Home">
+            <img src="/img/own/logo.svg" alt="GBWC">
+        </a>
+    </nav>
+    <nav class="glassnav" id="main-nav">
+        <div class="glassnav-pill">
+            <div class="glassnav-inner">
+                <ul class="glassnav-links">
+                    <li><a href="/kk/kk.html">Басты бет</a></li>
+                    <li><a href="/kk/about.html">Біз туралы</a></li>
+                    <li><a href="/kk/founders.html">Негізшілер</a></li>
+                    <li><a href="/kk/events.html">Іс-шаралар</a></li>
+                    <li><a href="/kk/initiatives.html">Бастамалар</a></li>
+                    <li><a href="/kk/partners.html">Серіктестер</a></li>
+                    <li><a href="/kk/media.html">БАҚ</a></li>
+                    <li><a href="/kk/contacts.html">Байланыс</a></li>
+                </ul>
+                <a href="/kk/contacts.html" class="glassnav-cta" id="join-btn">Мүшелікке өту <span class="cta-arrow">&#8594;</span></a>
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" id="lang-btn">
+                        <i class="bi bi-globe" style="font-size:14px;opacity:.6;"></i>
+                        <span>KK</span>
+                        <span class="lang-arrow">&#9660;</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <a href="/ru/partners.html" ><span class="lang-flag">🇷🇺</span> Русский</a>
+                        <a href="/en/partners.html" ><span class="lang-flag">🇬🇧</span> English</a>
+                        <a href="/kk/partners.html" class="active"><span class="lang-flag">🇰🇿</span> Қазақша</a>
+                    </div>
+                </div>
+                <button class="glassnav-burger" id="nav-burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="glassnav-mobile" id="nav-mobile">
+            <div class="glassnav-mobile-inner">
+                <a href="/kk/kk.html">Басты бет</a>
+                <a href="/kk/about.html">Біз туралы</a>
+                <a href="/kk/founders.html">Негізшілер</a>
+                <a href="/kk/events.html">Іс-шаралар</a>
+                <a href="/kk/initiatives.html">Бастамалар</a>
+                <a href="/kk/partners.html">Серіктестер</a>
+                <a href="/kk/media.html">БАҚ</a>
+                <a href="/kk/contacts.html">Байланыс</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/kk/contacts.html">Мүшелікке өту &#8594;</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/ru/partners.html">🇷🇺 Русский</a>
+                <a href="/en/partners.html">🇬🇧 English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close"><i class="bi bi-x-lg"></i></button>
+            <h3 class="modal-title">Хабарлама жіберу</h3>
+            <p class="modal-sub">Форманы толтырыңыз</p>
+            <div class="modal-form">
+                <div class="form-group"><label>Аты-жөні</label><input type="text" placeholder="Сіздің атыңыз"></div>
+                <div class="form-group"><label>Компания</label><input type="text" placeholder="Компания атауы"></div>
+                <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com"></div>
+                <div class="form-group"><label>Тақырып</label>
+                    <select><option value="">Тақырыпты таңдаңыз</option>                        <option>GBWC мүшелігі</option>
+                        <option>Серіктестік</option>
+                        <option>Іс-шараға қатысу</option>
+                        <option>БАҚ сұрауы</option>
+                        <option>Басқа</option></select>
+                </div>
+                <div class="form-group"><label>Хабарлама</label><textarea rows="4" placeholder="Хабарламаңыз..."></textarea></div>
+                <button class="form-submit">Жіберу</button>
+            </div>
+        </div>
+    </div>
+            <div style="padding-top:120px;"></div>
+    <section class="site-section">
+        <div class="site-section-inner">
+            <div class="sec-label"><span class="sec-label-line"></span><span class="sec-label-text">Серіктестер</span></div>
+            <h1 class="sec-title" style="margin-bottom:14px;">Біздің <em>серіктестер</em></h1>
+            <p class="sec-subtitle" style="margin-bottom:48px;max-width:560px;">Санатты басыңыз — барлық серіктестерді көресіз</p>
+            <div class="partner-categories" id="partner-categories">
+
+                <div class="partner-cat">
+                    <div class="partner-cat-line"></div>
+                    <div class="partner-cat-header">
+                        <div class="partner-cat-left">
+                            <span class="partner-cat-num">01</span>
+                            <span class="partner-cat-name">Стратегиялық серіктестер</span>
+                            <span class="partner-cat-count">8</span>
+                        </div>
+                        <i class="bi bi-chevron-down partner-cat-arrow"></i>
+                    </div>
+                    <div class="partner-cat-body">
+                        <div class="partner-marquee-wrap">
+                            <div class="partner-marquee-track">
+                            <div class="partner-chip"><img src="/img/logos/partners/ebrd.svg" alt="EBRD" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">EBRD</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/world-bank.svg" alt="World Bank" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">World Bank</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baker-mckenzie.svg" alt="Baker McKenzie" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baker McKenzie</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/citi.svg" alt="Citi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Citi</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/un-women.svg" alt="UN Women" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UN Women</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ifc.svg" alt="IFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/aifc.svg" alt="AIFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">AIFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kafc.svg" alt="KAFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KAFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ebrd.svg" alt="EBRD" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">EBRD</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/world-bank.svg" alt="World Bank" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">World Bank</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baker-mckenzie.svg" alt="Baker McKenzie" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baker McKenzie</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/citi.svg" alt="Citi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Citi</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/un-women.svg" alt="UN Women" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UN Women</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ifc.svg" alt="IFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/aifc.svg" alt="AIFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">AIFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kafc.svg" alt="KAFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KAFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ebrd.svg" alt="EBRD" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">EBRD</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/world-bank.svg" alt="World Bank" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">World Bank</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baker-mckenzie.svg" alt="Baker McKenzie" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baker McKenzie</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/citi.svg" alt="Citi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Citi</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/un-women.svg" alt="UN Women" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UN Women</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ifc.svg" alt="IFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/aifc.svg" alt="AIFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">AIFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kafc.svg" alt="KAFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KAFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ebrd.svg" alt="EBRD" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">EBRD</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/world-bank.svg" alt="World Bank" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">World Bank</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baker-mckenzie.svg" alt="Baker McKenzie" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baker McKenzie</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/citi.svg" alt="Citi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Citi</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/un-women.svg" alt="UN Women" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UN Women</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ifc.svg" alt="IFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/aifc.svg" alt="AIFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">AIFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kafc.svg" alt="KAFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KAFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ebrd.svg" alt="EBRD" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">EBRD</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/world-bank.svg" alt="World Bank" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">World Bank</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baker-mckenzie.svg" alt="Baker McKenzie" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baker McKenzie</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/citi.svg" alt="Citi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Citi</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/un-women.svg" alt="UN Women" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UN Women</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/ifc.svg" alt="IFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/aifc.svg" alt="AIFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">AIFC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kafc.svg" alt="KAFC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KAFC</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-cat">
+                    <div class="partner-cat-line"></div>
+                    <div class="partner-cat-header">
+                        <div class="partner-cat-left">
+                            <span class="partner-cat-num">02</span>
+                            <span class="partner-cat-name">Институционалдық серіктестер</span>
+                            <span class="partner-cat-count">8</span>
+                        </div>
+                        <i class="bi bi-chevron-down partner-cat-arrow"></i>
+                    </div>
+                    <div class="partner-cat-body">
+                        <div class="partner-marquee-wrap">
+                            <div class="partner-marquee-track">
+                            <div class="partner-chip"><img src="/img/logos/partners/icbdf.svg" alt="ICBDF" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ICBDF</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/undp.svg" alt="UNDP" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UNDP</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/adb.svg" alt="ADB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ADB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/isdb.svg" alt="IsDB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IsDB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/forbes-kz.svg" alt="Forbes Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Forbes Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/alem-sulu.svg" alt="Alem Sulu" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Alem Sulu</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kmg.svg" alt="KazMunayGas" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazMunayGas</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/icbdf.svg" alt="ICBDF" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ICBDF</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/undp.svg" alt="UNDP" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UNDP</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/adb.svg" alt="ADB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ADB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/isdb.svg" alt="IsDB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IsDB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/forbes-kz.svg" alt="Forbes Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Forbes Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/alem-sulu.svg" alt="Alem Sulu" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Alem Sulu</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kmg.svg" alt="KazMunayGas" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazMunayGas</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/icbdf.svg" alt="ICBDF" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ICBDF</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/undp.svg" alt="UNDP" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UNDP</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/adb.svg" alt="ADB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ADB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/isdb.svg" alt="IsDB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IsDB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/forbes-kz.svg" alt="Forbes Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Forbes Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/alem-sulu.svg" alt="Alem Sulu" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Alem Sulu</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kmg.svg" alt="KazMunayGas" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazMunayGas</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/icbdf.svg" alt="ICBDF" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ICBDF</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/undp.svg" alt="UNDP" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UNDP</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/adb.svg" alt="ADB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ADB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/isdb.svg" alt="IsDB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IsDB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/forbes-kz.svg" alt="Forbes Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Forbes Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/alem-sulu.svg" alt="Alem Sulu" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Alem Sulu</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kmg.svg" alt="KazMunayGas" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazMunayGas</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/icbdf.svg" alt="ICBDF" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ICBDF</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/undp.svg" alt="UNDP" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">UNDP</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/adb.svg" alt="ADB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">ADB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/isdb.svg" alt="IsDB" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">IsDB</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/forbes-kz.svg" alt="Forbes Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Forbes Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/alem-sulu.svg" alt="Alem Sulu" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Alem Sulu</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kmg.svg" alt="KazMunayGas" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazMunayGas</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-cat">
+                    <div class="partner-cat-line"></div>
+                    <div class="partner-cat-header">
+                        <div class="partner-cat-left">
+                            <span class="partner-cat-num">03</span>
+                            <span class="partner-cat-name">Өңірлік серіктестер</span>
+                            <span class="partner-cat-count">8</span>
+                        </div>
+                        <i class="bi bi-chevron-down partner-cat-arrow"></i>
+                    </div>
+                    <div class="partner-cat-body">
+                        <div class="partner-marquee-wrap">
+                            <div class="partner-marquee-track">
+                            <div class="partner-chip"><img src="/img/logos/partners/samruk.svg" alt="Samruk-Kazyna" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Samruk-Kazyna</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kazakhinvest.svg" alt="KazakhInvest" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazakhInvest</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/gov-kz.svg" alt="Gov. of Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Gov. of Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec2.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/astana-hub.svg" alt="Astana Hub" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Astana Hub</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/qaztech.svg" alt="QazTech" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">QazTech</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baiterek.svg" alt="Baiterek" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baiterek</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/damu.svg" alt="DAMU" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">DAMU</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/samruk.svg" alt="Samruk-Kazyna" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Samruk-Kazyna</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kazakhinvest.svg" alt="KazakhInvest" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazakhInvest</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/gov-kz.svg" alt="Gov. of Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Gov. of Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec2.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/astana-hub.svg" alt="Astana Hub" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Astana Hub</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/qaztech.svg" alt="QazTech" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">QazTech</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baiterek.svg" alt="Baiterek" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baiterek</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/damu.svg" alt="DAMU" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">DAMU</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/samruk.svg" alt="Samruk-Kazyna" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Samruk-Kazyna</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kazakhinvest.svg" alt="KazakhInvest" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazakhInvest</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/gov-kz.svg" alt="Gov. of Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Gov. of Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec2.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/astana-hub.svg" alt="Astana Hub" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Astana Hub</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/qaztech.svg" alt="QazTech" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">QazTech</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baiterek.svg" alt="Baiterek" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baiterek</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/damu.svg" alt="DAMU" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">DAMU</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/samruk.svg" alt="Samruk-Kazyna" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Samruk-Kazyna</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kazakhinvest.svg" alt="KazakhInvest" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazakhInvest</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/gov-kz.svg" alt="Gov. of Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Gov. of Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec2.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/astana-hub.svg" alt="Astana Hub" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Astana Hub</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/qaztech.svg" alt="QazTech" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">QazTech</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baiterek.svg" alt="Baiterek" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baiterek</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/damu.svg" alt="DAMU" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">DAMU</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/samruk.svg" alt="Samruk-Kazyna" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Samruk-Kazyna</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/kazakhinvest.svg" alt="KazakhInvest" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">KazakhInvest</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/gov-kz.svg" alt="Gov. of Kazakhstan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Gov. of Kazakhstan</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/carec2.svg" alt="CAREC" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">CAREC</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/astana-hub.svg" alt="Astana Hub" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Astana Hub</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/qaztech.svg" alt="QazTech" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">QazTech</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/baiterek.svg" alt="Baiterek" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">Baiterek</span></div>
+                            <div class="partner-chip"><img src="/img/logos/partners/damu.svg" alt="DAMU" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-chip-text" style="display:none">DAMU</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners-cta-box" style="margin-top:56px;">
+                <h3>GBWC серіктесі болу?</h3>
+                <a href="/kk/contacts.html" class="hero-btn-primary" style="text-decoration:none;display:inline-flex;gap:8px;align-items:center;">
+                    <i class="bi bi-envelope"></i> Бізге жазыңыз
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="/img/own/logo.svg" alt="GBWC" class="footer-logo-img">
+                        <span class="footer-logo-name">Global Businesswomen Council</span>
+                    </div>
+                    <p class="footer-desc">Бизнес және инвестиция саласындағы әйелдерге арналған халықаралық платформа.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Навигация</div>
+                    <ul class="footer-links">
+                        <li><a href="/kk/kk.html">Басты бет</a></li>
+                        <li><a href="/kk/about.html">Біз туралы</a></li>
+                        <li><a href="/kk/founders.html">Негізшілер</a></li>
+                        <li><a href="/kk/events.html">Іс-шаралар</a></li>
+                        <li><a href="/kk/initiatives.html">Бастамалар</a></li>
+                        <li><a href="/kk/partners.html">Серіктестер</a></li>
+                        <li><a href="/kk/media.html">БАҚ</a></li>
+                        <li><a href="/kk/contacts.html">Байланыс</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Байланыс</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt footer-contact-icon"></i>
+                        <div class="footer-contact-val">Достық 16, Talan Towers, Астана</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="tel:+77019293707">+7 701 929 3707</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="mailto:info@gbwc-secretariat.org">info@gbwc-secretariat.org</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">GBWC</div>
+                    <ul class="footer-links">
+                        <li><a href="/kk/about.html">Біз туралы</a></li>
+                        <li><a href="/kk/founders.html">Негізшілер</a></li>
+                        <li><a href="/kk/partners.html">Серіктестер</a></li>
+                        <li><a href="/kk/contacts.html">Мүшелікке өту</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&#169; 2026 Global Businesswomen Council. Барлық құқықтар қорғалған.</span>
+                <div class="footer-bottom-langs">                <a href="/ru/partners.html" class="">🇷🇺 RU</a>
+                <a href="/en/partners.html" class="">🇬🇧 EN</a>
+                <a href="/kk/partners.html" class="active">🇰🇿 KK</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+
+    <script>
+    </script>
+    
+    <script>
+        // Lang switcher
+        const sw = document.getElementById('lang-switcher');
+        const lb = document.getElementById('lang-btn');
+        if(lb) lb.addEventListener('click', e => { e.stopPropagation(); sw.classList.toggle('open'); });
+        document.addEventListener('click', () => sw && sw.classList.remove('open'));
+        // Modal
+        const joinBtn = document.getElementById('join-btn');
+        const modal = document.getElementById('contact-modal');
+        const modalClose = document.getElementById('modal-close');
+        if(joinBtn && modal) {
+            joinBtn.addEventListener('click', e => { e.preventDefault(); modal.classList.add('open'); });
+            modalClose && modalClose.addEventListener('click', () => modal.classList.remove('open'));
+            modal.addEventListener('click', e => { if(e.target === modal) modal.classList.remove('open'); });
+        }
+    </script>
+
+    <!-- ══ PARTNERS PAGE CINEMATIC ENTRANCE ══ -->
+    <script>
+    // Runs INSTANTLY before paint — hides elements via CSS class
+    document.body.classList.add('partners-page');
+    </script>
+    <script>
+    (function() {
+        // Preloader: 1.4s letters + 0.8s zoom-out = 2.2s total
+        var DELAY = 2300;
+
+        function runEntrance() {
+            var G = window.gsap;
+            if (!G) { 
+                // Fallback: just show everything
+                document.body.classList.remove('partners-page');
+                return; 
+            }
+
+            var tl = G.timeline({
+                onComplete: function() {
+                    document.body.classList.remove('partners-page');
+                }
+            });
+
+            tl
+            .fromTo('.sec-label',
+                { opacity: 0, x: -50 },
+                { opacity: 1, x: 0, duration: 0.65, ease: 'power3.out' })
+
+            .fromTo('.sec-title',
+                { opacity: 0, y: 60, filter: 'blur(10px)' },
+                { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.95, ease: 'expo.out' },
+                '-=0.4')
+
+            .fromTo('.sec-subtitle',
+                { opacity: 0, y: 28 },
+                { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' },
+                '-=0.65')
+
+            .fromTo('.partner-cat',
+                { opacity: 0, y: 70 },
+                { opacity: 1, y: 0, duration: 0.75, ease: 'power4.out', stagger: 0.14 },
+                '-=0.3')
+
+            .fromTo('.partner-cat-line',
+                { scaleX: 0, transformOrigin: 'left center' },
+                { scaleX: 1, duration: 1.15, ease: 'power2.inOut', stagger: 0.14 },
+                '-=0.8')
+
+            .fromTo('.partners-cta-box',
+                { opacity: 0, y: 40 },
+                { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' },
+                '-=0.5');
+        }
+
+        if (document.readyState === 'loading') {
+            window.addEventListener('load', function() { setTimeout(runEntrance, DELAY); });
+        } else {
+            setTimeout(runEntrance, DELAY);
+        }
+    })();
+    </script>
+  <script type="module" src="/src/hero-media.js"></script>
+  <script type="module" src="/src/contact-form.js"></script>
+</body>
+</html>

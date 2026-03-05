@@ -1,0 +1,4 @@
+node_modules/
+.env
+gbwc.nginx
+gbwc-backend.service

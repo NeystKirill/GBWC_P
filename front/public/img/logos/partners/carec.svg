@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+  <rect width="160" height="60" fill="none"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+    font-family="system-ui,sans-serif" font-size="14" font-weight="700"
+    fill="rgba(30,20,10,0.4)">CAREC</text>
+</svg>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBWC – Глобальный совет деловых женщин</title>
+    <link rel="icon" href="/img/own/logo.svg">
+    <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/hero-media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader_container" id="main-preloader">
+        <div class="preloader">
+            <div class="preloader_letters">
+                <div class="g">G</div>
+                <div class="w">W</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+            </div>
+            <img class="circle" src="/img/loading-clock.svg" alt="loading">
+            <img class="logo" src="/img/own/logo.svg" alt="logo">
+        </div>
+    </div>
+
+    <!-- Aurora Background -->
+    <div class="aurora-bg">
+        <div class="aurora-orb aurora-orb-1"></div>
+        <div class="aurora-orb aurora-orb-2"></div>
+        <div class="aurora-orb aurora-orb-3"></div>
+    </div>
+
+    <!-- Logo Nav -->
+    <nav class="logo-nav" id="logo-nav">
+        <a href="/ru/ru.html" class="logo-circle" aria-label="GBWC Главная">
+            <img src="/img/own/logo.svg" alt="GBWC">
+        </a>
+    </nav>
+
+    <!-- Links Nav -->
+    <nav class="glassnav" id="main-nav">
+        <div class="glassnav-pill">
+            <div class="glassnav-inner">
+                <ul class="glassnav-links">
+                    <li><a href="/ru/ru.html">Главная</a></li>
+                    <li><a href="/ru/about.html">О нас</a></li>
+                    <li><a href="/ru/founders.html">Основатели</a></li>
+                    <li><a href="/ru/events.html">Мероприятия</a></li>
+                    <li><a href="/ru/initiatives.html">Инициативы</a></li>
+                    <li><a href="/ru/partners.html">Партнёры</a></li>
+                    <li><a href="/ru/media.html">СМИ</a></li>
+                    <li><a href="/ru/contacts.html">Контакты</a></li>
+                </ul>
+                <a href="/ru/contacts.html" class="glassnav-cta">
+                    Стать членом <span class="cta-arrow">&#8594;</span>
+                </a>
+                <!-- Language switcher -->
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" id="lang-btn">
+                        <i class="bi bi-globe" style="font-size:14px;opacity:.6;"></i>
+                        <span>RU</span>
+                        <span class="lang-arrow">▾</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <a href="/ru/ru.html" class="active"><span class="lang-flag">🇷🇺</span> Русский</a>
+                        <a href="/en/en.html"><span class="lang-flag">🇬🇧</span> English</a>
+                        <a href="/kk/kk.html"><span class="lang-flag">🇰🇿</span> Қазақша</a>
+                    </div>
+                </div>
+                <button class="glassnav-burger" id="nav-burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="glassnav-mobile" id="nav-mobile">
+            <div class="glassnav-mobile-inner">
+                <a href="/ru/ru.html">Главная</a>
+                <a href="/ru/about.html">О нас</a>
+                <a href="/ru/founders.html">Основатели</a>
+                <a href="/ru/events.html">Мероприятия</a>
+                <a href="/ru/initiatives.html">Инициативы</a>
+                <a href="/ru/partners.html">Партнёры</a>
+                <a href="/ru/media.html">СМИ</a>
+                <a href="/ru/contacts.html">Контакты</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/ru/contacts.html">Стать членом →</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/en/en.html">🇬🇧 English</a>
+                <a href="/kk/kk.html">🇰🇿 Қазақша</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── Hero EN-style (Council / GBWC) ── -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+
+            <div class="hero-eyebrow anim-1">Global Businesswomen</div>
+
+            <div class="hero-title-wrap anim-2">
+                <div class="hero-title-slot">
+                    <h1 class="hero-title council" id="title-council">Council</h1>
+                    <h1 class="hero-title gbwc"    id="title-gbwc">GBWC</h1>
+                </div>
+            </div>
+
+            <p class="hero-subtitle anim-3">
+                Международная диалоговая платформа для женщин в бизнесе и инвестициях.
+                Объединение лидеров из более чем 30 стран в целях устойчивого развития.
+            </p>
+
+            <div class="hero-buttons anim-4">
+                <a href="/ru/events.html"   class="hero-btn-primary">Сессии</a>
+                <a href="/ru/contacts.html" class="hero-btn-secondary">Стать партнёром</a>
+            </div>
+
+            <div class="hero-stats anim-4">
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="3" data-suffix="">3</div>
+                    <div class="hero-stat-label">Сессии</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="30" data-suffix="+">30+</div>
+                    <div class="hero-stat-label">Страны</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="70" data-suffix="+">70+</div>
+                    <div class="hero-stat-label">Участники</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="2023" data-suffix="">2023</div>
+                    <div class="hero-stat-label">Основан</div>
+                </div>
+            </div>
+
+            <div class="hero-partners anim-5">
+                <p class="hero-partners-label">Спонсируется нашими партнёрами</p>
+                <div class="marquee-container">
+                    <div class="marquee-fade marquee-fade-l"></div>
+                    <div class="marquee-fade marquee-fade-r"></div>
+                    <div class="marquee-track marquee-fwd">
+                        <span class="partner-tag">EBRD</span><span class="partner-tag">World Bank</span><span class="partner-tag">Baker McKenzie</span><span class="partner-tag">Citi</span><span class="partner-tag">KAFC</span><span class="partner-tag">ICBDF</span><span class="partner-tag">AIFC</span><span class="partner-tag">EBRD</span><span class="partner-tag">World Bank</span><span class="partner-tag">Baker McKenzie</span><span class="partner-tag">Citi</span><span class="partner-tag">KAFC</span><span class="partner-tag">ICBDF</span><span class="partner-tag">AIFC</span><span class="partner-tag">EBRD</span><span class="partner-tag">World Bank</span><span class="partner-tag">Baker McKenzie</span><span class="partner-tag">Citi</span><span class="partner-tag">KAFC</span><span class="partner-tag">ICBDF</span><span class="partner-tag">AIFC</span>
+                    </div>
+                </div>
+                <div class="marquee-container">
+                    <div class="marquee-fade marquee-fade-l"></div>
+                    <div class="marquee-fade marquee-fade-r"></div>
+                    <div class="marquee-track marquee-rev">
+                        <span class="partner-tag">UN Women</span><span class="partner-tag">IFC</span><span class="partner-tag">CAREC</span><span class="partner-tag">Samruk-Kazyna</span><span class="partner-tag">KazakhInvest</span><span class="partner-tag">Gov. of Kazakhstan</span><span class="partner-tag">Forbes Kazakhstan</span><span class="partner-tag">Alem Sulu</span><span class="partner-tag">KazMunayGas</span><span class="partner-tag">UNDP</span><span class="partner-tag">ADB</span><span class="partner-tag">IsDB</span><span class="partner-tag">UN Women</span><span class="partner-tag">IFC</span><span class="partner-tag">CAREC</span><span class="partner-tag">Samruk-Kazyna</span><span class="partner-tag">KazakhInvest</span><span class="partner-tag">Gov. of Kazakhstan</span><span class="partner-tag">Forbes Kazakhstan</span><span class="partner-tag">Alem Sulu</span><span class="partner-tag">KazMunayGas</span><span class="partner-tag">UNDP</span><span class="partner-tag">ADB</span><span class="partner-tag">IsDB</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Hero RU (two-column) ── -->
+    <div class="hero-two-col" id="hero-ru">
+        <div class="hero-two-col-inner">
+
+            <!-- Left -->
+            <div class="hero-col-left reveal reveal-left">
+                <div class="hero-eyebrow-pill anim-1">
+                    <span class="hero-eyebrow-dot"></span>
+                    Международная организация
+                </div>
+
+                <h1 class="hero-title-ru anim-2">
+                    Мы объединяем<br>
+                    женщин-лидеров
+                    <em>мирового бизнеса</em>
+                </h1>
+
+                <hr class="hero-divider anim-3">
+
+                <p class="hero-desc-ru anim-3">
+                    Global Businesswomen Council — платформа, объединяющая
+                    влиятельных женщин-политиков и предпринимателей из Центральной
+                    Азии, Персидского залива, Африки, Европы и Америки.
+                </p>
+
+                <div class="hero-btns-ru anim-4">
+                    <a href="/ru/about.html"   class="hero-btn-primary">Узнать о нас</a>
+                    <a href="/ru/events.html"  class="btn-outline">Мероприятия</a>
+                    <a href="/ru/contacts.html" class="btn-outline">Стать партнёром</a>
+                </div>
+
+                <div class="hero-stats-ru anim-4">
+                    <div>
+                        <div class="hero-stat-num-ru" data-target="40" data-suffix="+">40+</div>
+                        <div class="hero-stat-label-ru">Стран-участниц</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-num-ru" data-target="500" data-suffix="+">500+</div>
+                        <div class="hero-stat-label-ru">Участниц сети</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-num-ru" data-target="2" data-suffix="">2</div>
+                        <div class="hero-stat-label-ru">Пленарных заседания</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="hero-col-right anim-2">
+                <div class="hero-image-panel">
+                    <img src="/img/own/logo.svg" alt="GBWC" class="hero-image-panel-logo">
+                    <span class="hero-image-panel-label">GBWC Фото</span>
+                    <div class="hero-year-badge">
+                        <span class="hero-year-num">2023</span>
+                        <span class="hero-year-label">Год основания</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ── Ключевые направления ── -->
+    <section class="site-section" id="directions">
+        <div class="site-section-inner">
+            <div class="sec-label">
+                <span class="sec-label-line"></span>
+                <span class="sec-label-text">Ключевые направления</span>
+            </div>
+            <div class="sec-header">
+                <div class="sec-header-left">
+                    <h2 class="sec-title">Что мы <em>делаем</em></h2>
+                </div>
+                <div class="sec-header-right">
+                    <p class="sec-subtitle">Три главных направления деятельности GBWC, которые меняют жизни женщин в бизнесе по всему миру.</p>
+                </div>
+            </div>
+            <div class="direction-cards">
+                <div class="direction-card reveal reveal-scale">
+                    <div class="dir-num">01</div>
+                    <div class="dir-icon">🌐</div>
+                    <h3 class="dir-title">Пленарные заседания</h3>
+                    <p class="dir-desc">Высокоуровневые форумы с участием лидеров мирового бизнеса, политики и МФИ.</p>
+                </div>
+                <div class="direction-card reveal reveal-scale">
+                    <div class="dir-num">02</div>
+                    <div class="dir-icon">♡</div>
+                    <h3 class="dir-title">Социальные проекты</h3>
+                    <p class="dir-desc">Программы поддержки женского лидерства, наставничество и образование.</p>
+                </div>
+                <div class="direction-card reveal reveal-scale">
+                    <div class="dir-num">03</div>
+                    <div class="dir-icon">◈</div>
+                    <h3 class="dir-title">Международные связи</h3>
+                    <p class="dir-desc">Трансграничные проекты и доступ к инвестиционным рынкам по всему миру.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Мероприятия ── -->
+    <section class="site-section" id="events">
+        <div class="site-section-inner">
+            <div class="sec-label">
+                <span class="sec-label-line"></span>
+                <span class="sec-label-text">Мероприятия</span>
+            </div>
+            <div class="sec-header-row">
+                <h2 class="sec-title">Прошедшие и <em>предстоящие</em></h2>
+                <a href="/ru/events.html" class="sec-header-cta">Все мероприятия →</a>
+            </div>
+            <div class="event-cards">
+                <div class="event-card reveal">
+                    <div class="event-photo" data-event="event-2023">
+                        <svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <span class="event-photo-label">Фото 2023</span>
+                        <span class="event-badge past">Прошедшее</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-meta">
+                            <span>📅 7 июня 2023</span>
+                            <span>📍 Астана, Казахстан</span>
+                        </div>
+                        <h3 class="event-title">I Пленарное заседание GBWC</h3>
+                        <p class="event-desc">В рамках 35-го заседания Совета иностранных инвесторов при Президенте РК.</p>
+                        <a href="/ru/events.html" class="event-link">Подробнее →</a>
+                    </div>
+                </div>
+                <div class="event-card reveal">
+                    <div class="event-photo">
+                        <svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <span class="event-photo-label">Фото 2024</span>
+                        <span class="event-badge past">Прошедшее</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-meta">
+                            <span>📅 31 октября 2024</span>
+                            <span>📍 Астана, Казахстан</span>
+                        </div>
+                        <h3 class="event-title">II Пленарное заседание GBWC</h3>
+                        <p class="event-desc">Высокоуровневые дискуссии о женском лидерстве и стратегическом сотрудничестве.</p>
+                        <a href="/ru/events.html" class="event-link">Подробнее →</a>
+                    </div>
+                </div>
+                <div class="event-card upcoming reveal reveal-delay-2">
+                    <div class="event-photo" data-event="event-2024">
+                        <svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <span class="event-photo-label">Фото TBD</span>
+                        <span class="event-badge soon">Скоро</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-meta">
+                            <span>📅 2025 (дата уточняется)</span>
+                            <span>📍 TBD</span>
+                        </div>
+                        <h3 class="event-title">III Пленарное заседание GBWC</h3>
+                        <p class="event-desc">Следующий этап развития GBWC. Подайте заявку на участие уже сейчас.</p>
+                        <a href="/ru/contacts.html" class="event-link">Подать заявку →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer (placeholder) ── -->
+            <footer class="site-footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="/img/own/logo.svg" alt="GBWC" class="footer-logo-img">
+                        <span class="footer-logo-name">Global Businesswomen Council</span>
+                    </div>
+                    <p class="footer-desc">Международная диалоговая платформа для женщин в бизнесе и инвестициях.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Навигация</div>
+                    <ul class="footer-links">
+                        <li><a href="/ru/ru.html">Главная</a></li>
+                        <li><a href="/ru/about.html">О нас</a></li>
+                        <li><a href="/ru/founders.html">Основатели</a></li>
+                        <li><a href="/ru/events.html">Мероприятия</a></li>
+                        <li><a href="/ru/initiatives.html">Инициативы</a></li>
+                        <li><a href="/ru/partners.html">Партнёры</a></li>
+                        <li><a href="/ru/media.html">СМИ</a></li>
+                        <li><a href="/ru/contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Контакты</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt footer-contact-icon"></i>
+                        <div class="footer-contact-val">Ул. Достык 16, Talan Towers, Астана</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="tel:+77019293707">+7 701 929 3707</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="mailto:info@gbwc-secretariat.org">info@gbwc-secretariat.org</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">GBWC</div>
+                    <ul class="footer-links">
+                        <li><a href="/ru/about.html">О нас</a></li>
+                        <li><a href="/ru/founders.html">Основатели</a></li>
+                        <li><a href="/ru/partners.html">Партнёры</a></li>
+                        <li><a href="/ru/contacts.html">Стать членом</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&#169; 2026 Global Businesswomen Council. Все права защищены.</span>
+                <div class="footer-bottom-langs">                <a href="/ru/ru.html" class="active">🇷🇺 RU</a>
+                <a href="/en/en.html" class="">🇬🇧 EN</a>
+                <a href="/kk/kk.html" class="">🇰🇿 KK</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+
+        // Counter animation for RU stats
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.target || '0', 10);
+            const suffix = el.dataset.suffix || '';
+            const duration = 1800;
+            const start = performance.now();
+            const update = (now) => {
+                const p = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - p, 3);
+                el.textContent = Math.round(eased * target) + suffix;
+                if (p < 1) requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+        }
+        const ruNums = document.querySelectorAll('.hero-stat-num-ru[data-target]');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); obs.unobserve(e.target); } });
+        }, { threshold: 0.5 });
+        ruNums.forEach(el => obs.observe(el));
+    </script>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close">✕</button>
+            <h3 class="modal-title">Написать нам</h3>
+            <p class="modal-sub">Заполните форму — мы свяжемся с вами в ближайшее время</p>
+            <div class="modal-form">
+                <div class="form-group"><label>Имя</label><input type="text" placeholder="Ваше имя"></div>
+                <div class="form-group"><label>Компания</label><input type="text" placeholder="Название компании"></div>
+                <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com"></div>
+                <div class="form-group"><label>Тема</label>
+                    <select><option value="">Выберите тему</option><option>Членство в GBWC</option><option>Партнёрство</option><option>Участие в мероприятии</option><option>Медиа-запрос</option><option>Другое</option></select>
+                </div>
+                <div class="form-group"><label>Сообщение</label><textarea rows="4" placeholder="Ваше сообщение..."></textarea></div>
+                <button class="form-submit">Отправить сообщение</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Language switcher
+        const sw = document.getElementById('lang-switcher');
+        const lb = document.getElementById('lang-btn');
+        if(lb) lb.addEventListener('click', e => { e.stopPropagation(); sw.classList.toggle('open'); });
+        document.addEventListener('click', () => sw && sw.classList.remove('open'));
+        // Modal
+        const joinBtn = document.querySelector('.glassnav-cta');
+        const modal = document.getElementById('contact-modal');
+        const mclose = document.getElementById('modal-close');
+        if(joinBtn && modal) {
+            joinBtn.addEventListener('click', e => { e.preventDefault(); modal.classList.add('open'); });
+            mclose && mclose.addEventListener('click', () => modal.classList.remove('open'));
+            modal.addEventListener('click', e => { if(e.target===modal) modal.classList.remove('open'); });
+        }
+    </script>
+  <script type="module" src="/src/hero-media.js"></script>
+  <script type="module" src="/src/contact-form.js"></script>
+</body>
+</html>

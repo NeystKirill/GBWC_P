@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іс-шаралар – GBWC</title>
+    <link rel="icon" href="/img/own/logo.svg">
+    <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/hero-media.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+</head>
+<body>
+    <div class="preloader_container" id="main-preloader">
+        <div class="preloader">
+            <div class="preloader_letters">
+                <div class="g">G</div><div class="w">W</div>
+                <div class="b">B</div><div class="c">C</div>
+            </div>
+            <img class="circle" src="/img/loading-clock.svg" alt="loading">
+            <img class="logo" src="/img/own/logo.svg" alt="logo">
+        </div>
+    </div>
+    <div class="aurora-bg">
+        <div class="aurora-orb aurora-orb-1"></div>
+        <div class="aurora-orb aurora-orb-2"></div>
+        <div class="aurora-orb aurora-orb-3"></div>
+    </div>
+    <nav class="logo-nav" id="logo-nav">
+        <a href="/kk/kk.html" class="logo-circle" aria-label="Home">
+            <img src="/img/own/logo.svg" alt="GBWC">
+        </a>
+    </nav>
+    <nav class="glassnav" id="main-nav">
+        <div class="glassnav-pill">
+            <div class="glassnav-inner">
+                <ul class="glassnav-links">
+                    <li><a href="/kk/kk.html">Басты бет</a></li>
+                    <li><a href="/kk/about.html">Біз туралы</a></li>
+                    <li><a href="/kk/founders.html">Негізшілер</a></li>
+                    <li><a href="/kk/events.html">Іс-шаралар</a></li>
+                    <li><a href="/kk/initiatives.html">Бастамалар</a></li>
+                    <li><a href="/kk/partners.html">Серіктестер</a></li>
+                    <li><a href="/kk/media.html">БАҚ</a></li>
+                    <li><a href="/kk/contacts.html">Байланыс</a></li>
+                </ul>
+                <a href="/kk/contacts.html" class="glassnav-cta" id="join-btn">Мүшелікке өту <span class="cta-arrow">&#8594;</span></a>
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" id="lang-btn">
+                        <i class="bi bi-globe" style="font-size:14px;opacity:.6;"></i>
+                        <span>KK</span>
+                        <span class="lang-arrow">&#9660;</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <a href="/ru/events.html" ><span class="lang-flag">🇷🇺</span> Русский</a>
+                        <a href="/en/events.html" ><span class="lang-flag">🇬🇧</span> English</a>
+                        <a href="/kk/events.html" class="active"><span class="lang-flag">🇰🇿</span> Қазақша</a>
+                    </div>
+                </div>
+                <button class="glassnav-burger" id="nav-burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="glassnav-mobile" id="nav-mobile">
+            <div class="glassnav-mobile-inner">
+                <a href="/kk/kk.html">Басты бет</a>
+                <a href="/kk/about.html">Біз туралы</a>
+                <a href="/kk/founders.html">Негізшілер</a>
+                <a href="/kk/events.html">Іс-шаралар</a>
+                <a href="/kk/initiatives.html">Бастамалар</a>
+                <a href="/kk/partners.html">Серіктестер</a>
+                <a href="/kk/media.html">БАҚ</a>
+                <a href="/kk/contacts.html">Байланыс</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/kk/contacts.html">Мүшелікке өту &#8594;</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/ru/events.html">🇷🇺 Русский</a>
+                <a href="/en/events.html">🇬🇧 English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close"><i class="bi bi-x-lg"></i></button>
+            <h3 class="modal-title">Хабарлама жіберу</h3>
+            <p class="modal-sub">Форманы толтырыңыз</p>
+            <div class="modal-form">
+                <div class="form-group"><label>Аты-жөні</label><input type="text" placeholder="Сіздің атыңыз"></div>
+                <div class="form-group"><label>Компания</label><input type="text" placeholder="Компания атауы"></div>
+                <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com"></div>
+                <div class="form-group"><label>Тақырып</label>
+                    <select><option value="">Тақырыпты таңдаңыз</option>                        <option>GBWC мүшелігі</option>
+                        <option>Серіктестік</option>
+                        <option>Іс-шараға қатысу</option>
+                        <option>БАҚ сұрауы</option>
+                        <option>Басқа</option></select>
+                </div>
+                <div class="form-group"><label>Хабарлама</label><textarea rows="4" placeholder="Хабарламаңыз..."></textarea></div>
+                <button class="form-submit">Жіберу</button>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top:120px;"></div>
+    <section class="site-section">
+        <div class="site-section-inner">
+            <div class="sec-label"><span class="sec-label-line"></span><span class="sec-label-text">Іс-шаралар</span></div>
+            <div class="sec-header-row" style="margin-bottom:48px;"><h1 class="sec-title">Өткен және <em>алдағы</em></h1></div>
+            <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-photo" data-event="event-2023"><svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span class="event-photo-label">Фото 2023</span><span class="event-badge past">Өткен</span></div>
+                    <div class="event-body">
+                        <div class="event-meta"><span><i class="bi bi-calendar3"></i> 7 маусым 2023</span><span><i class="bi bi-geo-alt"></i> Астана, Қазақстан</span></div>
+                        <h3 class="event-title">I GBWC Пленарлық отырысы</h3>
+                        <p class="event-desc">ҚР Президенті жанындағы Шетелдік инвесторлар кеңесінің 35-ші отырысы аясында.</p>
+                        <a href="#" class="event-link">Толығырақ <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-photo"><svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span class="event-photo-label">Фото 2024</span><span class="event-badge past">Өткен</span></div>
+                    <div class="event-body">
+                        <div class="event-meta"><span><i class="bi bi-calendar3"></i> 31 қазан 2024</span><span><i class="bi bi-geo-alt"></i> Астана, Қазақстан</span></div>
+                        <h3 class="event-title">II GBWC Пленарлық отырысы</h3>
+                        <p class="event-desc">Әйел-көшбасшылық пен стратегиялық ынтымақтастық туралы жоғары деңгейлі талқылаулар.</p>
+                        <a href="#" class="event-link">Толығырақ <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="event-card upcoming">
+                    <div class="event-photo" data-event="event-2024"><svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span class="event-photo-label">Фото TBD</span><span class="event-badge soon">Жақында</span></div>
+                    <div class="event-body">
+                        <div class="event-meta"><span><i class="bi bi-calendar3"></i> 2025 (нақтыланады)</span><span><i class="bi bi-geo-alt"></i> TBD</span></div>
+                        <h3 class="event-title">III GBWC Пленарлық отырысы</h3>
+                        <p class="event-desc">GBWC дамуының келесі кезеңі. Қатысуға өтінім берің.</p>
+                        <a href="/kk/contacts.html" class="event-link">Өтінім беру <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="/img/own/logo.svg" alt="GBWC" class="footer-logo-img">
+                        <span class="footer-logo-name">Global Businesswomen Council</span>
+                    </div>
+                    <p class="footer-desc">Бизнес және инвестиция саласындағы әйелдерге арналған халықаралық платформа.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Навигация</div>
+                    <ul class="footer-links">
+                        <li><a href="/kk/kk.html">Басты бет</a></li>
+                        <li><a href="/kk/about.html">Біз туралы</a></li>
+                        <li><a href="/kk/founders.html">Негізшілер</a></li>
+                        <li><a href="/kk/events.html">Іс-шаралар</a></li>
+                        <li><a href="/kk/initiatives.html">Бастамалар</a></li>
+                        <li><a href="/kk/partners.html">Серіктестер</a></li>
+                        <li><a href="/kk/media.html">БАҚ</a></li>
+                        <li><a href="/kk/contacts.html">Байланыс</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Байланыс</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt footer-contact-icon"></i>
+                        <div class="footer-contact-val">Достық 16, Talan Towers, Астана</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="tel:+77019293707">+7 701 929 3707</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="mailto:info@gbwc-secretariat.org">info@gbwc-secretariat.org</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">GBWC</div>
+                    <ul class="footer-links">
+                        <li><a href="/kk/about.html">Біз туралы</a></li>
+                        <li><a href="/kk/founders.html">Негізшілер</a></li>
+                        <li><a href="/kk/partners.html">Серіктестер</a></li>
+                        <li><a href="/kk/contacts.html">Мүшелікке өту</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&#169; 2026 Global Businesswomen Council. Барлық құқықтар қорғалған.</span>
+                <div class="footer-bottom-langs">                <a href="/ru/events.html" class="">🇷🇺 RU</a>
+                <a href="/en/events.html" class="">🇬🇧 EN</a>
+                <a href="/kk/events.html" class="active">🇰🇿 KK</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+        // Lang switcher
+        const sw = document.getElementById('lang-switcher');
+        const lb = document.getElementById('lang-btn');
+        if(lb) lb.addEventListener('click', e => { e.stopPropagation(); sw.classList.toggle('open'); });
+        document.addEventListener('click', () => sw && sw.classList.remove('open'));
+        // Modal
+        const joinBtn = document.getElementById('join-btn');
+        const modal = document.getElementById('contact-modal');
+        const modalClose = document.getElementById('modal-close');
+        if(joinBtn && modal) {
+            joinBtn.addEventListener('click', e => { e.preventDefault(); modal.classList.add('open'); });
+            modalClose && modalClose.addEventListener('click', () => modal.classList.remove('open'));
+            modal.addEventListener('click', e => { if(e.target === modal) modal.classList.remove('open'); });
+        }
+    </script>
+  <script type="module" src="/src/hero-media.js"></script>
+  <script type="module" src="/src/contact-form.js"></script>
+</body>
+</html>

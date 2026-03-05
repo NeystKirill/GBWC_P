@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBWC – Жаһандық бизнес-әйелдер кеңесі</title>
+    <link rel="icon" href="/img/own/logo.svg">
+    <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/hero-media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader_container" id="main-preloader">
+        <div class="preloader">
+            <div class="preloader_letters">
+                <div class="g">G</div>
+                <div class="w">W</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+            </div>
+            <img class="circle" src="/img/loading-clock.svg" alt="loading">
+            <img class="logo" src="/img/own/logo.svg" alt="logo">
+        </div>
+    </div>
+
+    <!-- Aurora Background -->
+    <div class="aurora-bg">
+        <div class="aurora-orb aurora-orb-1"></div>
+        <div class="aurora-orb aurora-orb-2"></div>
+        <div class="aurora-orb aurora-orb-3"></div>
+    </div>
+
+    <!-- Logo Nav -->
+    <nav class="logo-nav" id="logo-nav">
+        <a href="/ru/ru.html" class="logo-circle" aria-label="GBWC Басты бет">
+            <img src="/img/own/logo.svg" alt="GBWC">
+        </a>
+    </nav>
+
+    <!-- Links Nav -->
+    <nav class="glassnav" id="main-nav">
+        <div class="glassnav-pill">
+            <div class="glassnav-inner">
+                <ul class="glassnav-links">
+                    <li><a href="/kk/kk.html">Басты бет</a></li>
+                    <li><a href="/kk/about.html">Біз туралы</a></li>
+                    <li><a href="/kk/founders.html">Негізшілер</a></li>
+                    <li><a href="/kk/events.html">Іс-шаралар</a></li>
+                    <li><a href="/kk/initiatives.html">Бастамалар</a></li>
+                    <li><a href="/kk/partners.html">Серіктестер</a></li>
+                    <li><a href="/kk/media.html">БАҚ</a></li>
+                    <li><a href="/kk/contacts.html">Байланыс</a></li>
+                </ul>
+                <a href="/kk/contacts.html" class="glassnav-cta">
+                    Мүшелікке өту <span class="cta-arrow">&#8594;</span>
+                </a>
+                <!-- Language switcher -->
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" id="lang-btn">
+                        <i class="bi bi-globe" style="font-size:14px;opacity:.6;"></i>
+                        <span>KK</span>
+                        <span class="lang-arrow">▾</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <a href="/ru/ru.html"><span class="lang-flag">🇷🇺</span> Русский</a>
+                        <a href="/en/en.html"><span class="lang-flag">🇬🇧</span> English</a>
+                        <a href="/kk/kk.html" class="active"><span class="lang-flag">🇰🇿</span> Қазақша</a>
+                    </div>
+                </div>
+                <button class="glassnav-burger" id="nav-burger" aria-label="Мәзір">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="glassnav-mobile" id="nav-mobile">
+            <div class="glassnav-mobile-inner">
+                <a href="/kk/kk.html">Басты бет</a>
+                <a href="/kk/about.html">Біз туралы</a>
+                <a href="/kk/founders.html">Негізшілер</a>
+                <a href="/kk/events.html">Іс-шаралар</a>
+                <a href="/kk/initiatives.html">Бастамалар</a>
+                <a href="/kk/partners.html">Серіктестер</a>
+                <a href="/kk/media.html">БАҚ</a>
+                <a href="/kk/contacts.html">Байланыс</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/kk/contacts.html">Мүшелікке өту →</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/ru/ru.html">🇷🇺 Русский</a>
+                <a href="/en/en.html">🇬🇧 English</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── Hero (Council / GBWC) ── -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+
+            <div class="hero-eyebrow anim-1">Global Businesswomen</div>
+
+            <div class="hero-title-wrap anim-2">
+                <div class="hero-title-slot">
+                    <h1 class="hero-title council" id="title-council">Council</h1>
+                    <h1 class="hero-title gbwc"    id="title-gbwc">GBWC</h1>
+                </div>
+            </div>
+
+            <p class="hero-subtitle anim-3">
+                Бизнес және инвестиция саласындағы әйелдерге арналған халықаралық диалог алаңы.
+                Тұрақты даму үшін 30-дан астам елдің көшбасшыларын біріктіру.
+            </p>
+
+            <div class="hero-buttons anim-4">
+                <a href="/kk/events.html"   class="hero-btn-primary">Сессиялар</a>
+                <a href="/kk/contacts.html" class="hero-btn-secondary">Серіктес болыңыз</a>
+            </div>
+
+            <div class="hero-stats anim-4">
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="3" data-suffix="">3</div>
+                    <div class="hero-stat-label">Сессиялар</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="30" data-suffix="+">30+</div>
+                    <div class="hero-stat-label">Елдер</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="70" data-suffix="+">70+</div>
+                    <div class="hero-stat-label">Қатысушылар</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num" data-target="2023" data-suffix="">2023</div>
+                    <div class="hero-stat-label">Құрылған жыл</div>
+                </div>
+            </div>
+
+            <div class="hero-partners anim-5">
+                <p class="hero-partners-label">Серіктестеріміздің демеушілігімен</p>
+                <div class="marquee-container">
+                    <div class="marquee-fade marquee-fade-l"></div>
+                    <div class="marquee-fade marquee-fade-r"></div>
+                    <div class="marquee-track marquee-fwd">
+                        <span class="partner-tag">EBRD</span><span class="partner-tag">World Bank</span><span class="partner-tag">Baker McKenzie</span><span class="partner-tag">Citi</span><span class="partner-tag">KAFC</span><span class="partner-tag">ICBDF</span><span class="partner-tag">AIFC</span><span class="partner-tag">EBRD</span><span class="partner-tag">World Bank</span><span class="partner-tag">Baker McKenzie</span><span class="partner-tag">Citi</span><span class="partner-tag">KAFC</span><span class="partner-tag">ICBDF</span><span class="partner-tag">AIFC</span><span class="partner-tag">EBRD</span><span class="partner-tag">World Bank</span><span class="partner-tag">Baker McKenzie</span><span class="partner-tag">Citi</span><span class="partner-tag">KAFC</span><span class="partner-tag">ICBDF</span><span class="partner-tag">AIFC</span>
+                    </div>
+                </div>
+                <div class="marquee-container">
+                    <div class="marquee-fade marquee-fade-l"></div>
+                    <div class="marquee-fade marquee-fade-r"></div>
+                    <div class="marquee-track marquee-rev">
+                        <span class="partner-tag">UN Women</span><span class="partner-tag">IFC</span><span class="partner-tag">CAREC</span><span class="partner-tag">Samruk-Kazyna</span><span class="partner-tag">KazakhInvest</span><span class="partner-tag">Gov. of Kazakhstan</span><span class="partner-tag">Forbes Kazakhstan</span><span class="partner-tag">Alem Sulu</span><span class="partner-tag">KazMunayGas</span><span class="partner-tag">UNDP</span><span class="partner-tag">ADB</span><span class="partner-tag">IsDB</span><span class="partner-tag">UN Women</span><span class="partner-tag">IFC</span><span class="partner-tag">CAREC</span><span class="partner-tag">Samruk-Kazyna</span><span class="partner-tag">KazakhInvest</span><span class="partner-tag">Gov. of Kazakhstan</span><span class="partner-tag">Forbes Kazakhstan</span><span class="partner-tag">Alem Sulu</span><span class="partner-tag">KazMunayGas</span><span class="partner-tag">UNDP</span><span class="partner-tag">ADB</span><span class="partner-tag">IsDB</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Hero KK (two-column) ── -->
+    <div class="hero-two-col" id="hero-kk">
+        <div class="hero-two-col-inner">
+
+            <!-- Left -->
+            <div class="hero-col-left reveal reveal-left">
+                <div class="hero-eyebrow-pill anim-1">
+                    <span class="hero-eyebrow-dot"></span>
+                    Халықаралық ұйым
+                </div>
+
+                <h1 class="hero-title-ru anim-2">
+                    Біз біріктіреміз<br>
+                    бизнес-көшбасшы
+                    <em>әйелдерді</em>
+                </h1>
+
+                <hr class="hero-divider anim-3">
+
+                <p class="hero-desc-ru anim-3">
+                    Global Businesswomen Council — Орталық Азия, Парсы шығанағы,
+                    Африка, Еуропа және Америкадан ықпалды әйел-саясаткерлер мен
+                    кәсіпкерлерді біріктіретін платформа.
+                </p>
+
+                <div class="hero-btns-ru anim-4">
+                    <a href="/kk/about.html"    class="hero-btn-primary">Біз туралы</a>
+                    <a href="/kk/events.html"   class="btn-outline">Іс-шаралар</a>
+                    <a href="/kk/contacts.html" class="btn-outline">Серіктес болу</a>
+                </div>
+
+                <div class="hero-stats-ru anim-4">
+                    <div>
+                        <div class="hero-stat-num-ru" data-target="40" data-suffix="+">40+</div>
+                        <div class="hero-stat-label-ru">Қатысушы-елдер</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-num-ru" data-target="500" data-suffix="+">500+</div>
+                        <div class="hero-stat-label-ru">Желі мүшелері</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-num-ru" data-target="2" data-suffix="">2</div>
+                        <div class="hero-stat-label-ru">Пленарлық отырыстар</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="hero-col-right anim-2">
+                <div class="hero-image-panel">
+                    <img src="/img/own/logo.svg" alt="GBWC" class="hero-image-panel-logo">
+                    <span class="hero-image-panel-label">GBWC Фото</span>
+                    <div class="hero-year-badge">
+                        <span class="hero-year-num">2023</span>
+                        <span class="hero-year-label">Құрылған жыл</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ── Негізгі бағыттар ── -->
+    <section class="site-section" id="directions">
+        <div class="site-section-inner">
+            <div class="sec-label">
+                <span class="sec-label-line"></span>
+                <span class="sec-label-text">Негізгі бағыттар</span>
+            </div>
+            <div class="sec-header">
+                <div class="sec-header-left">
+                    <h2 class="sec-title">Біз не <em>істейміз</em></h2>
+                </div>
+                <div class="sec-header-right">
+                    <p class="sec-subtitle">GBWC қызметінің бүкіл әлемдегі бизнес-әйелдердің өмірін өзгертетін үш негізгі бағыты.</p>
+                </div>
+            </div>
+            <div class="direction-cards">
+                <div class="direction-card reveal reveal-scale">
+                    <div class="dir-num">01</div>
+                    <div class="dir-icon">🌐</div>
+                    <h3 class="dir-title">Пленарлық отырыстар</h3>
+                    <p class="dir-desc">Дүниежүзілік бизнес, саясат және МҚҰ көшбасшылары қатысатын жоғары деңгейлі форумдар.</p>
+                </div>
+                <div class="direction-card reveal reveal-scale">
+                    <div class="dir-num">02</div>
+                    <div class="dir-icon">♡</div>
+                    <h3 class="dir-title">Әлеуметтік жобалар</h3>
+                    <p class="dir-desc">Әйел-көшбасшылықты қолдау бағдарламалары, тәлімгерлік және білім беру бастамалары.</p>
+                </div>
+                <div class="direction-card reveal reveal-scale">
+                    <div class="dir-num">03</div>
+                    <div class="dir-icon">◈</div>
+                    <h3 class="dir-title">Халықаралық байланыстар</h3>
+                    <p class="dir-desc">Трансшекаралық жобалар және бүкіл әлем бойынша инвестициялық нарықтарға қол жеткізу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Іс-шаралар ── -->
+    <section class="site-section" id="events">
+        <div class="site-section-inner">
+            <div class="sec-label">
+                <span class="sec-label-line"></span>
+                <span class="sec-label-text">Іс-шаралар</span>
+            </div>
+            <div class="sec-header-row">
+                <h2 class="sec-title">Өткен және <em>алдағы</em></h2>
+                <a href="/kk/events.html" class="sec-header-cta">Барлық іс-шаралар →</a>
+            </div>
+            <div class="event-cards">
+                <div class="event-card reveal">
+                    <div class="event-photo" data-event="event-2023">
+                        <svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <span class="event-photo-label">Фото 2023</span>
+                        <span class="event-badge past">Өткен</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-meta">
+                            <span>📅 7 маусым 2023</span>
+                            <span>📍 Астана, Қазақстан</span>
+                        </div>
+                        <h3 class="event-title">I Пленарлық отырыс GBWC</h3>
+                        <p class="event-desc">ҚР Президенті жанындағы Шетелдік инвесторлар кеңесінің 35-ші отырысы аясында.</p>
+                        <a href="/kk/events.html" class="event-link">Толығырақ →</a>
+                    </div>
+                </div>
+                <div class="event-card reveal">
+                    <div class="event-photo">
+                        <svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <span class="event-photo-label">Фото 2024</span>
+                        <span class="event-badge past">Өткен</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-meta">
+                            <span>📅 31 қазан 2024</span>
+                            <span>📍 Астана, Қазақстан</span>
+                        </div>
+                        <h3 class="event-title">II Пленарлық отырыс GBWC</h3>
+                        <p class="event-desc">Әйел-көшбасшылық пен стратегиялық ынтымақтастық туралы жоғары деңгейлі талқылаулар.</p>
+                        <a href="/kk/events.html" class="event-link">Толығырақ →</a>
+                    </div>
+                </div>
+                <div class="event-card upcoming reveal reveal-delay-2">
+                    <div class="event-photo" data-event="event-2024">
+                        <svg class="event-photo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <span class="event-photo-label">Фото TBD</span>
+                        <span class="event-badge soon">Жақында</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-meta">
+                            <span>📅 2025 (нақтыланады)</span>
+                            <span>📍 TBD</span>
+                        </div>
+                        <h3 class="event-title">III Пленарлық отырыс GBWC</h3>
+                        <p class="event-desc">GBWC дамуының келесі кезеңі. Қатысуға өтінім берің.</p>
+                        <a href="/kk/contacts.html" class="event-link">Өтінім беру →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer (placeholder) ── -->
+            <footer class="site-footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="/img/own/logo.svg" alt="GBWC" class="footer-logo-img">
+                        <span class="footer-logo-name">Global Businesswomen Council</span>
+                    </div>
+                    <p class="footer-desc">Бизнес және инвестиция саласындағы әйелдерге арналған халықаралық платформа.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Навигация</div>
+                    <ul class="footer-links">
+                        <li><a href="/kk/kk.html">Басты бет</a></li>
+                        <li><a href="/kk/about.html">Біз туралы</a></li>
+                        <li><a href="/kk/founders.html">Негізшілер</a></li>
+                        <li><a href="/kk/events.html">Іс-шаралар</a></li>
+                        <li><a href="/kk/initiatives.html">Бастамалар</a></li>
+                        <li><a href="/kk/partners.html">Серіктестер</a></li>
+                        <li><a href="/kk/media.html">БАҚ</a></li>
+                        <li><a href="/kk/contacts.html">Байланыс</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Байланыс</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt footer-contact-icon"></i>
+                        <div class="footer-contact-val">Достық 16, Talan Towers, Астана</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="tel:+77019293707">+7 701 929 3707</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="mailto:info@gbwc-secretariat.org">info@gbwc-secretariat.org</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">GBWC</div>
+                    <ul class="footer-links">
+                        <li><a href="/kk/about.html">Біз туралы</a></li>
+                        <li><a href="/kk/founders.html">Негізшілер</a></li>
+                        <li><a href="/kk/partners.html">Серіктестер</a></li>
+                        <li><a href="/kk/contacts.html">Мүшелікке өту</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&#169; 2026 Global Businesswomen Council. Барлық құқықтар қорғалған.</span>
+                <div class="footer-bottom-langs">                <a href="/ru/ru.html" class="">🇷🇺 RU</a>
+                <a href="/en/en.html" class="">🇬🇧 EN</a>
+                <a href="/kk/kk.html" class="active">🇰🇿 KK</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+        // Language switcher
+        const switcher = document.getElementById('lang-switcher');
+        const btn = document.getElementById('lang-btn');
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            switcher.classList.toggle('open');
+        });
+        document.addEventListener('click', () => switcher.classList.remove('open'));
+
+        // Counter animation for KK stats
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.target || '0', 10);
+            const suffix = el.dataset.suffix || '';
+            const duration = 1800;
+            const start = performance.now();
+            const update = (now) => {
+                const p = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - p, 3);
+                el.textContent = Math.round(eased * target) + suffix;
+                if (p < 1) requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+        }
+        const kkNums = document.querySelectorAll('.hero-stat-num-ru[data-target]');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); obs.unobserve(e.target); } });
+        }, { threshold: 0.5 });
+        kkNums.forEach(el => obs.observe(el));
+    </script>
+  <script type="module" src="/src/hero-media.js"></script>
+</body>
+</html>

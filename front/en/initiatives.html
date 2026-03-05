@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiatives – GBWC</title>
+    <link rel="icon" href="/img/own/logo.svg">
+    <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/hero-media.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+</head>
+<body>
+    <div class="preloader_container" id="main-preloader">
+        <div class="preloader">
+            <div class="preloader_letters">
+                <div class="g">G</div><div class="w">W</div>
+                <div class="b">B</div><div class="c">C</div>
+            </div>
+            <img class="circle" src="/img/loading-clock.svg" alt="loading">
+            <img class="logo" src="/img/own/logo.svg" alt="logo">
+        </div>
+    </div>
+    <div class="aurora-bg">
+        <div class="aurora-orb aurora-orb-1"></div>
+        <div class="aurora-orb aurora-orb-2"></div>
+        <div class="aurora-orb aurora-orb-3"></div>
+    </div>
+    <nav class="logo-nav" id="logo-nav">
+        <a href="/en/en.html" class="logo-circle" aria-label="Home">
+            <img src="/img/own/logo.svg" alt="GBWC">
+        </a>
+    </nav>
+    <nav class="glassnav" id="main-nav">
+        <div class="glassnav-pill">
+            <div class="glassnav-inner">
+                <ul class="glassnav-links">
+                    <li><a href="/en/en.html">Home</a></li>
+                    <li><a href="/en/about.html">About</a></li>
+                    <li><a href="/en/founders.html">Founders</a></li>
+                    <li><a href="/en/events.html">Events</a></li>
+                    <li><a href="/en/initiatives.html">Initiatives</a></li>
+                    <li><a href="/en/partners.html">Partners</a></li>
+                    <li><a href="/en/media.html">Media</a></li>
+                    <li><a href="/en/contacts.html">Contacts</a></li>
+                </ul>
+                <a href="/en/contacts.html" class="glassnav-cta" id="join-btn">Become a Member <span class="cta-arrow">&#8594;</span></a>
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" id="lang-btn">
+                        <i class="bi bi-globe" style="font-size:14px;opacity:.6;"></i>
+                        <span>EN</span>
+                        <span class="lang-arrow">&#9660;</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <a href="/ru/initiatives.html" ><span class="lang-flag">🇷🇺</span> Русский</a>
+                        <a href="/en/initiatives.html" class="active"><span class="lang-flag">🇬🇧</span> English</a>
+                        <a href="/kk/initiatives.html" ><span class="lang-flag">🇰🇿</span> Қазақша</a>
+                    </div>
+                </div>
+                <button class="glassnav-burger" id="nav-burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="glassnav-mobile" id="nav-mobile">
+            <div class="glassnav-mobile-inner">
+                <a href="/en/en.html">Home</a>
+                <a href="/en/about.html">About</a>
+                <a href="/en/founders.html">Founders</a>
+                <a href="/en/events.html">Events</a>
+                <a href="/en/initiatives.html">Initiatives</a>
+                <a href="/en/partners.html">Partners</a>
+                <a href="/en/media.html">Media</a>
+                <a href="/en/contacts.html">Contacts</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/en/contacts.html">Become a Member &#8594;</a>
+                <div class="glassnav-mobile-divider"></div>
+                <a href="/ru/initiatives.html">🇷🇺 Русский</a>
+                <a href="/kk/initiatives.html">🇰🇿 Қазақша</a>
+            </div>
+        </div>
+    </nav>
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close"><i class="bi bi-x-lg"></i></button>
+            <h3 class="modal-title">Contact Us</h3>
+            <p class="modal-sub">Fill in the form — we will get back to you</p>
+            <div class="modal-form">
+                <div class="form-group"><label>Name</label><input type="text" placeholder="Your name"></div>
+                <div class="form-group"><label>Company</label><input type="text" placeholder="Company name"></div>
+                <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com"></div>
+                <div class="form-group"><label>Subject</label>
+                    <select><option value="">Select subject</option>                        <option>GBWC Membership</option>
+                        <option>Partnership</option>
+                        <option>Event Participation</option>
+                        <option>Media Request</option>
+                        <option>Other</option></select>
+                </div>
+                <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Your message..."></textarea></div>
+                <button class="form-submit">Send Message</button>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top:120px;"></div>
+    <section class="site-section">
+        <div class="site-section-inner">
+            <div class="sec-label"><span class="sec-label-line"></span><span class="sec-label-text">Initiatives</span></div>
+            <h1 class="sec-title" style="margin-bottom:14px;">Our <em>initiatives</em></h1>
+            <p class="sec-subtitle" style="margin-bottom:56px;max-width:560px;">Key areas of GBWC activity around the world</p>
+            <div class="init-grid">
+                <div class="init-card">
+                    <div class="init-num">01</div>
+                    <div class="init-icon"><i class="bi bi-globe2"></i></div>
+                    <h3>Plenary Sessions</h3>
+                    <p>High-level forums with global business, political leaders, and IFIs. A platform for strategic discussions.</p>
+                </div>
+                <div class="init-card">
+                    <div class="init-num">02</div>
+                    <div class="init-icon"><i class="bi bi-heart-pulse"></i></div>
+                    <h3>Social Projects</h3>
+                    <p>Women's leadership support: mentorship, educational resources, entrepreneurship development.</p>
+                </div>
+                <div class="init-card">
+                    <div class="init-num">03</div>
+                    <div class="init-icon"><i class="bi bi-diagram-3"></i></div>
+                    <h3>International Links</h3>
+                    <p>Business expansion through cross-border partnerships. Access to markets in Central Asia, Gulf, Africa, Europe.</p>
+                </div>
+                <div class="init-card">
+                    <div class="init-num">04</div>
+                    <div class="init-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h3>Investment Opportunities</h3>
+                    <p>Opening new markets for women leaders. Direct access to international investment structures and IFIs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="/img/own/logo.svg" alt="GBWC" class="footer-logo-img">
+                        <span class="footer-logo-name">Global Businesswomen Council</span>
+                    </div>
+                    <p class="footer-desc">International dialogue platform for women in business and investment.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Navigation</div>
+                    <ul class="footer-links">
+                        <li><a href="/en/en.html">Home</a></li>
+                        <li><a href="/en/about.html">About</a></li>
+                        <li><a href="/en/founders.html">Founders</a></li>
+                        <li><a href="/en/events.html">Events</a></li>
+                        <li><a href="/en/initiatives.html">Initiatives</a></li>
+                        <li><a href="/en/partners.html">Partners</a></li>
+                        <li><a href="/en/media.html">Media</a></li>
+                        <li><a href="/en/contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Contacts</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt footer-contact-icon"></i>
+                        <div class="footer-contact-val">16 Dostyk St., Talan Towers, Astana</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="tel:+77019293707">+7 701 929 3707</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope footer-contact-icon"></i>
+                        <div class="footer-contact-val"><a href="mailto:info@gbwc-secretariat.org">info@gbwc-secretariat.org</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">GBWC</div>
+                    <ul class="footer-links">
+                        <li><a href="/en/about.html">About</a></li>
+                        <li><a href="/en/founders.html">Founders</a></li>
+                        <li><a href="/en/partners.html">Partners</a></li>
+                        <li><a href="/en/contacts.html">Become a Member</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&#169; 2026 Global Businesswomen Council. All rights reserved.</span>
+                <div class="footer-bottom-langs">                <a href="/ru/initiatives.html" class="">🇷🇺 RU</a>
+                <a href="/en/initiatives.html" class="active">🇬🇧 EN</a>
+                <a href="/kk/initiatives.html" class="">🇰🇿 KK</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+        // Lang switcher
+        const sw = document.getElementById('lang-switcher');
+        const lb = document.getElementById('lang-btn');
+        if(lb) lb.addEventListener('click', e => { e.stopPropagation(); sw.classList.toggle('open'); });
+        document.addEventListener('click', () => sw && sw.classList.remove('open'));
+        // Modal
+        const joinBtn = document.getElementById('join-btn');
+        const modal = document.getElementById('contact-modal');
+        const modalClose = document.getElementById('modal-close');
+        if(joinBtn && modal) {
+            joinBtn.addEventListener('click', e => { e.preventDefault(); modal.classList.add('open'); });
+            modalClose && modalClose.addEventListener('click', () => modal.classList.remove('open'));
+            modal.addEventListener('click', e => { if(e.target === modal) modal.classList.remove('open'); });
+        }
+    </script>
+  <script type="module" src="/src/hero-media.js"></script>
+  <script type="module" src="/src/contact-form.js"></script>
+</body>
+</html>
