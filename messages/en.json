@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "about": "About",
+    "events": "Sessions",
+    "initiatives": "Initiatives",
+    "partners": "Partners",
+    "media": "Media",
+    "contacts": "Contacts",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "GLOBAL BUSINESSWOMEN COUNCIL",
+    "subtitle": "An international dialogue platform for women in business and investment",
+    "cta1": "About us",
+    "cta2": "Sessions",
+    "cta3": "Contact us"
+  },
+  "stats": {
+    "plenary": "Plenary Sessions",
+    "countries": "30+ Countries",
+    "founded": "2023 Year Founded",
+    "participants": "70+ Participants"
+  },
+  "marquee": "PLENARY SESSIONS — GREEN INVESTMENTS — SOCIAL PROJECTS — INTERNATIONAL TIES — FAMILY SUPPORT — VATICAN — SECRETARIAT",
+  "features": {
+    "title": "Key Directions",
+    "f1": {
+      "title": "Plenary Sessions",
+      "desc": "International dialogue platforms for women business leaders and investors"
+    },
+    "f2": {
+      "title": "Green Investments",
+      "desc": "Sustainable development and social investments for the future"
+    },
+    "f3": {
+      "title": "Social Projects",
+      "desc": "Family support and infrastructure development initiatives"
+    },
+    "f4": {
+      "title": "International Relations",
+      "desc": "Expanding communications between business and government"
+    }
+  },
+  "events": {
+    "title": "Our Plenary Sessions",
+    "viewAll": "All Sessions",
+    "plenary1": {
+      "title": "I Plenary Session",
+      "theme": "New business and investment opportunities in changing reality",
+      "date": "June 7, 2023",
+      "location": "Hilton Astana, Astana"
+    },
+    "plenary2": {
+      "title": "II Plenary Session",
+      "theme": "Green and Social Investments. Development of Small and Medium Enterprises",
+      "date": "October 31, 2024",
+      "location": "Palace of Independence, Astana"
+    },
+    "plenary3": {
+      "title": "III Plenary Session",
+      "theme": "Women Leaders Perspective on Social Investment",
+      "date": "June 24, 2025",
+      "location": "Palace of Independence, Astana"
+    }
+  },
+  "media": {
+    "title": "Media and Publications",
+    "viewAll": "All Publications"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "become": "Become a GBWC Partner"
+  },
+  "cta": {
+    "title": "Join GBWC",
+    "subtitle": "Expand your business opportunities through international cooperation",
+    "button": "Become a Partner"
+  },
+  "footer": {
+    "about": "Global Businesswomen Council is a dialogue platform for women in business and investment",
+    "secretariat": "GBWC Secretariat",
+    "head": "Head",
+    "assistant": "Assistant",
+    "rights": "© 2023-2025 Global Businesswomen Council. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "pages": {
+    "about": {
+      "title": "About Global Businesswomen Council",
+      "description": "Global Businesswomen Council (GBWC) is a dialogue platform aimed at expanding business opportunities and implementing investment projects in various social sectors.",
+      "mission": "Mission",
+      "missionText": "To provide women with access to emerging international markets, create investment opportunities, foster business partnerships, and establish effective communication.",
+      "goal": "Our Goal",
+      "goalText": "Building the capacity of women and developing international business in the name of building a better world.",
+      "members": "GBWC unites influential women from Central Asia, the Persian Gulf, Southeast Asia, Africa, Europe and America",
+      "composition": "Composition includes women investors, international business leaders and women politicians",
+      "participants": "Participants include women investors, politicians and global influencers",
+      "activities": "GBWC provides investment opportunities, expands business and cross-border projects, implements social initiatives",
+      "secretariat": "The GBWC Secretariat ensures coordination and support of platform activities",
+      "founder": "Founder: Zhanna Baidasheva, founder of GBWC and the Kazakhstan Foreign Investors Council Association"
+    },
+    "events": {
+      "title": "Plenary Sessions",
+      "description": "History of GBWC plenary sessions",
+      "plenary1": {
+        "title": "I Plenary Session",
+        "theme": "New business and investment opportunities in changing reality",
+        "date": "June 7, 2023",
+        "location": "Hilton Astana, Astana",
+        "description": "First plenary session with participation of EBRD, World Bank and other organizations"
+      },
+      "plenary2": {
+        "title": "II Plenary Session",
+        "theme": "Green and Social Investments. Development of Small and Medium Enterprises",
+        "date": "October 31, 2024",
+        "location": "Palace of Independence, Astana",
+        "description": "Second session focused on green investments and SME development"
+      },
+      "plenary3": {
+        "title": "III Plenary Session",
+        "theme": "Women Leaders Perspective on Social Investment",
+        "date": "June 24, 2025",
+        "location": "Palace of Independence, Astana",
+        "description": "Third session dedicated to social investments and womens role in development"
+      }
+    },
+    "eventDetail": {
+      "date": "Date",
+      "location": "Location",
+      "format": "Format",
+      "time": "Time",
+      "agenda": "Agenda",
+      "participants": "Participants",
+      "protocol": "Protocol and Outcomes",
+      "members": "GBWC Members",
+      "guests": "Invited Guests",
+      "representatives": "Representatives of the Republic of Kazakhstan",
+      "decisions": "Decisions and Outcomes"
+    },
+    "initiatives": {
+      "title": "GBWC Initiatives",
+      "description": "Social and investment projects",
+      "familySupport": {
+        "title": "Family Support Center Project",
+        "date": "December 19, 2024",
+        "location": "Almaty",
+        "description": "Consultative seminar on sustainable development and family support involving GGGI"
+      },
+      "vaticanChoir": {
+        "title": "Student Choir Chapel in Vatican",
+        "date": "May 3-8, 2025",
+        "location": "Vatican",
+        "description": "Performance of Kazakh choir at St. Peters Basilica by invitation of Pope Francis"
+      }
+    },
+    "partners": {
+      "title": "GBWC Partners",
+      "description": "Become a partner of Global Businesswomen Council"
+    },
+    "media": {
+      "title": "Media and Publications",
+      "description": "News and publications about GBWC"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "description": "Get in touch with us",
+      "address": "Dostyk St. 16, Talan Towers Business Center, office F, Astana, Kazakhstan 010000",
+      "secretariatHead": "Secretariat Head: Bibigul Maserbaeva",
+      "phone": "+7 702 731 4400",
+      "assistant": "Assistant: Sana Kumargazy",
+      "assistantPhone": "+7 778 124 70 54",
+      "email": "bibigul.maserbaeva@gbwc.network",
+      "form": "Contact Form",
+      "formNameLabel": "Your Name",
+      "formEmailLabel": "Your Email",
+      "formMessageLabel": "Message",
+      "formSubmit": "Send"
+    }
+  },
+  "back": "Back",
+  "learnMore": "Learn More",
+  "readMore": "Read More"
+}
